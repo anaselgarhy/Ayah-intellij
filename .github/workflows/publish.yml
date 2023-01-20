@@ -1,0 +1,16 @@
+# This is a basic workflow that is manually triggered
+
+name: Publish the plugin in marketplace
+
+on:
+  release:
+    types:
+      - published # when a release is published
+jobs:
+  deploying:
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Runs a single command using the runners shell
+    - name: Deploying a Plugin with Gradle
+      run: ./gradlew publishPlugin -Dorg.gradle.project.intellijPublishToken=${{ secrets.PUBLISH_TOKEN }}

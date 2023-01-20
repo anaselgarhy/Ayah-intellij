@@ -3,25 +3,18 @@
 	<!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
 	<id>com.anas.intellij.plugins.ayah</id>
 
+	<depends>com.intellij.modules.platform</depends>
+
 	<!-- Public plugin name should be written in Title Case.
 		 Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
 	<name>Ayah</name>
-
-	<!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+	<!-- A displayed Vend`or name or Organization ID displayed on the Plugins Page. -->
 	<vendor email="anas.elgarhy.dev@gmail.com" url="https://github.com/anas-elgarhy">Anas Elgarhy</vendor>
-
-	<!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
-		 Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
-		 Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-	<description><![CDATA[
-	<h3>Ayah</h3>
-	<p> Get a verse(an ayah) from the Quran during your coding session 💻 stay connected with the words of Allah. 🤍 </p>
-    <p align="center"> وَلا تَكُونُوا كَالَّذِينَ نَسُوا اللَّهَ فَأَنْسَاهُمْ أَنْفُسَهُمْ أُولَئِكَ هُمُ الْفَاسِقُونَ </p>
-  ]]></description>
 
 	<!-- Product and plugin compatibility requirements.
 		 Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
 	<depends>com.intellij.modules.platform</depends>
+
 
 	<!-- Extension points defined by the plugin.
 		 Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
